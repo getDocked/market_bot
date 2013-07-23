@@ -111,7 +111,7 @@ module MarketBot
         doc.css('.single-review').each do |node|
         	# puts node
         	review = {}
-        	review[:id] = node.css('.review-header')['data-reviewid'].strip
+        	#review[:id] = node.css('.review-header')['data-reviewid'].strip
         	review[:name] = node.css('.author-name').first.text.strip
         	review[:date] = node.css('.review-date').first.text.strip
         	#review-info-star-rating
