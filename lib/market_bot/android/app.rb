@@ -108,9 +108,12 @@ module MarketBot
         end
 
         # Reviews
+        c = 0
         doc.css('.single-review').each do |node|
-        	puts node
+        	# puts node
+        	c += 1
         end
+        puts c
         
 
         node = doc.css('.whatsnew').first
