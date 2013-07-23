@@ -107,6 +107,12 @@ module MarketBot
           result[:screenshot_urls] << node[:src]
         end
 
+        # Reviews
+        doc.css('.single-review').each do |node|
+        	puts node
+        end
+        
+
         node = doc.css('.whatsnew').first
         result[:whats_new] = node.inner_html.strip unless node.nil?
 
